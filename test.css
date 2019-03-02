@@ -1,0 +1,8 @@
+.img-excel{
+	width: 40px;
+	height: 40px;
+	/* margin-top: 30px; */
+	/* display: none;
+	opacity: 0; */
+	transition: all 0.4s;
+}
