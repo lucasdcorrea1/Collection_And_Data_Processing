@@ -18,10 +18,9 @@ $('#btn-enviar').on("click", function ajax() {
 			$(".tela-inteira").css('display', 'block');
 			setTimeout(function(){
 				window.location = "tabelas.html";
-			}, 8000);
+			}, 3000);
 		}
 	})
-	
 });
 
 

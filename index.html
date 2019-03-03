@@ -1,8 +1,8 @@
 <!doctype html>
 <html lang="en">
-
+<link href="img/excel.png" rel="icon">
 <head>
-  <title>Hello, world!</title>
+  <title>Processing!</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
@@ -17,7 +17,7 @@
 
 <body class="dark-edition">
   <div class="wrapper ">
-    <div class="sidebar" data-color="green" data-background-color="black" data-image="./assets/img/sidebar-2.jpg">
+    <div class="sidebar" data-color="green" data-background-color="black" data-image="./assets/img/sidebar-12.jpg">
       <!--
       Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
 
@@ -79,9 +79,9 @@
             <div class="card-icon">
               <img class="img-excel" src="img/excel.png" alt="">
             </div>
-           
-            <p class="card-category"> Arraste o arquivo .xlsx aqui <br>ou </p>
-            <p class="card-title">Selecione o arquivo no seu computador</p>
+            
+            <p class="card-category">Upload</p>
+            <h5 class="card-title">Arraste o arquivo .xlsx aqui ou Selecione o arquivo no seu computador</h5>
           </div>
           <div class="card-footer">
               <div class="stats">
@@ -92,14 +92,33 @@
           </div>
       </div>
   </div>
+  
+    <div class="col-md-6 col-sm-6">
+        <div class="card card-stats">
+            <div class="card-header card-header-success card-header-icon">
+              <div class="card-icon">
+                <img class="img-excel" src="img/file.png" alt="">
+              </div>
+              <p class="card-category">Download</p>
+              <h3 class="card-title">Excel</h3>
+            </div>
+            <div class="card-footer">
+                <div class="stats">
+                    <i class="material-icons">date_range</i> Last 24 Hours
+                </div>
+            </div>
+        </div>
+    </div>
+  
+    </div>
   <div class="card card-nav-tabs">
     <div class="card-header card-header-success">
-      Quote
+      Processar
     </div>
     <div class="card-body">
       <blockquote class="blockquote mb-0">
-        <p> <button type="button" class="btn btn-success" id="btn-enviar">PROCESSAR</button>	</p>
-        <footer class="blockquote-footer" id="test" >Someone famous in <cite title="Source Title">Source Title</cite></footer>
+        <p> <button type="button" class="btn btn-success" id="btn-enviar">Processar</button>	</p>
+        <footer class="blockquote-footer" id="test" >Gerar tabelas de <cite title="Source Title">Excel</cite></footer>
       </blockquote>
     </div>
   </div>
