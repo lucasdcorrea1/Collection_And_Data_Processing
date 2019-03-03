@@ -36,30 +36,6 @@
               <p>Dashboard</p>
             </a>
           </li>
-          <li class="nav-item active  ">
-                <a class="nav-link" href="javascript:void(0)">
-                  <i class="material-icons">dashboard</i>
-                  <p>Dashboard</p>
-                </a>
-              </li>
-              <li class="nav-item active  ">
-                    <a class="nav-link" href="javascript:void(0)">
-                      <i class="material-icons">dashboard</i>
-                      <p>Dashboard</p>
-                    </a>
-                  </li>
-                  <li class="nav-item active  ">
-                        <a class="nav-link" href="javascript:void(0)">
-                          <i class="material-icons">dashboard</i>
-                          <p>Dashboard</p>
-                        </a>
-                      </li>
-                      <li class="nav-item active  ">
-                            <a class="nav-link" href="javascript:void(0)">
-                              <i class="material-icons">dashboard</i>
-                              <p>Dashboard</p>
-                            </a>
-                          </li>
           <!-- your sidebar here -->
         </ul>
       </div>
@@ -93,7 +69,152 @@
         </div>
       </nav>
       <!-- End Navbar -->
- 
+      <div class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                  <div class="card card-chart">
+                    <div class="card-header card-chart card-header-warning">
+                      <div class="ct-chart" id="dailySalesChart"></div>
+                    </div>  
+                    <div class="card-body">
+                      <h4 class="card-title">Daily Sales</h4>
+                      <p class="card-category"><span class="text-success"><i class="fa fa-long-arrow-up"></i> 55%  </span> increase in today sales.</p>
+                    </div>
+                    <div class="card-footer">
+                      <div class="stats">
+                        <i class="material-icons">access_time</i> updated 4 minutes ago
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                <div class="card card-chart">
+                  <div class="card-header card-chart card-header-success">
+                    <div class="ct-chart" id="completedTasksChart"></div>
+                  </div>  
+                  <div class="card-body">
+                    <h4 class="card-title">Completed Tasks</h4>
+                    <p class="card-category">Last Campaign Performance</p>
+                  </div>
+                  <div class="card-footer">
+                    <div class="stats">
+                      <i class="material-icons">access_time</i> updated 2 minutes ago
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+          <!-- your content here -->
+          <div class="card text-center">
+            <div class="card-header card-header-success">
+              <ul class="nav nav-tabs">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Active</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+              </ul>
+            </div>
+            <table class="table">
+              <thead class=" text-primary">
+                  <th>
+                      ID
+                  </th>
+                  <th>
+                      Name
+                  </th>
+                  <th>
+                      Country
+                  </th>
+                  <th>
+                      City
+                  </th>
+                  <th>
+                      Salary
+                  </th>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>
+                          1
+                      </td>
+                      <td>
+                          Dakota Rice
+                      </td>
+                      <td>
+                          Niger
+                      </td>
+                      <td>
+                          Oud-Turnhout
+                      </td>
+                      <td class="text-primary">
+                          $36,738
+                      </td>
+                  </tr>
+              </tbody>
+          </table>
+  </div>
+  <div class="card text-center">
+    <div class="card-header card-header-success">
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Active</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
+    </div>
+    <table class="table">
+      <thead class=" text-primary">
+          <th>
+              ID
+          </th>
+          <th>
+              Name
+          </th>
+          <th>
+              Country
+          </th>
+          <th>
+              City
+          </th>
+          <th>
+              Salary
+          </th>
+      </thead>
+      <tbody>
+          <tr>
+              <td>
+                  1
+              </td>
+              <td>
+                  Dakota Rice
+              </td>
+              <td>
+                  Niger
+              </td>
+              <td>
+                  Oud-Turnhout
+              </td>
+              <td class="text-primary">
+                  $36,738
+              </td>
+          </tr>
+      </tbody>
+  </table>
+</div>
+
+
+
       <footer class="footer">
         <div class="container-fluid">
           <nav class="float-left">
@@ -301,10 +422,15 @@
   	<script src="js/jszip.js"></script>
     <script src="js/xlsx.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/main.js"></script>
-	<script>
+    <script>
 			var teste = sessionStorage.getItem('array-finalzao')
             console.log(JSON.parse(teste));
+      var ultimo = JSON.parse(teste).length
+           
+      for (var i = 0; i < ultimo; i++) {
+      
+ 
+      }
 	</script>
 </body>
 
