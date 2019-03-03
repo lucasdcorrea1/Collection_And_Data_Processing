@@ -38,7 +38,7 @@ var ExcelToJSON = function() {
             var XL_row_object = XLSX.utils.sheet_to_row_object_array(workbook.Sheets[sheetName]);
             var json_object = JSON.stringify(XL_row_object);
 			console.log(JSON.parse(json_object));
-			
+			document.getElementById("process").style = "display: block;";
            
             sessionStorage.setItem('array-finalzao', json_object);
             var teste = sessionStorage.getItem('array-finalzao')
