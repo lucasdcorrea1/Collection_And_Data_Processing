@@ -19,7 +19,7 @@
 
 <body class="dark-edition">
   <div class="wrapper ">
-    <div class="sidebar" data-color="green" data-background-color="black" data-image="./assets/img/sidebar-2.jpg">
+    <div class="sidebar" data-color="green" data-background-color="black" data-image="./assets/img/sidebar-9.jpg">
       <!--
       Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
 
@@ -84,14 +84,13 @@
         </div>
       </nav>
       <!-- End Navbar -->
+      
       <div class="content">
         <div class="container-fluid">
           <div class="row">
             <div class="col-md-6">
               <div class="card card-chart">
-                <div class="card-header card-chart card-header-warning">
-                  <div class="ct-chart" id="dailySalesChart"></div>
-                </div>
+                <canvas id="myChart" class="pizza"></canvas>
                 <div class="card-body">
                   <h4 class="card-title">Daily Sales</h4>
                   <p class="card-category"><span class="text-success"><i class="fa fa-long-arrow-up"></i> 55% </span>
@@ -106,9 +105,7 @@
             </div>
             <div class="col-md-6">
               <div class="card card-chart">
-                <div class="card-header card-chart card-header-success">
-                  <div class="ct-chart" id="completedTasksChart"></div>
-                </div>
+                <canvas id="myChart2" class="pizza"></canvas>
                 <div class="card-body">
                   <h4 class="card-title">Completed Tasks</h4>
                   <p class="card-category">Last Campaign Performance</p>
@@ -158,6 +155,7 @@
               </tbody>
             </table>
           </div>
+          
           <div id="cardtest" class="card text-center">
             <div class="card-header card-header-success">
               <ul class="nav nav-tabs">
@@ -223,7 +221,7 @@
         </div>
       </div>
       <!--   Core JS Files   -->
-
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js'></script>
       <script src="./assets/js/core/jquery.min.js"></script>
       <script src="./assets/js/core/popper.min.js"></script>
       <script src="./assets/js/core/bootstrap-material-design.min.js"></script>
@@ -406,38 +404,8 @@
       <script src="js/jszip.js"></script>
       <script src="js/xlsx.js"></script>
       <script src="js/main.js"></script>
-      <script>
-        var teste = sessionStorage.getItem('array-finalzao')
-        console.log(JSON.parse(teste));
-        
-        var ultimo = JSON.parse(teste).length
-        let body = "";
-        document.getElementById("tbodyestado").innerHTML = "";
-        for (var i = 0; i < ultimo; i++) {
+      <script  src="js/maintable.js"></script>
 
-          body +=
-            "<tr>" +
-                "<td>"+
-                    JSON.parse(teste)[i].RA +
-                  "</td>"+
-                  "<td>"+
-                      JSON.parse(teste)[i].ESTADO +
-                  "</td>"+
-                  "<td>"+
-                      JSON.parse(teste)[i].CIDADESP +
-                  "</td>"+
-                  "<td>"+
-                      JSON.parse(teste)[i].COMQUEMMORA2 +
-                  "</td>"+
-                  "<td class='text-primary'>"+
-                      JSON.parse(teste)[i].QUALADISTÂNCIADOTRABALHOCASAATÉAFACULDADE2 +
-                  "</td>"+
-          "<tr>";
-              var tr = document.getElementsByTagName("td");
-        };
-        document.getElementById("tbodyestado").innerHTML = body;
-      
-      </script>
 </body>
 
 </html>
