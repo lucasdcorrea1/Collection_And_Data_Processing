@@ -36,6 +36,30 @@
               <p>Dashboard</p>
             </a>
           </li>
+          <li class="nav-item active  ">
+                <a class="nav-link" href="javascript:void(0)">
+                  <i class="material-icons">dashboard</i>
+                  <p>Dashboard</p>
+                </a>
+              </li>
+              <li class="nav-item active  ">
+                    <a class="nav-link" href="javascript:void(0)">
+                      <i class="material-icons">dashboard</i>
+                      <p>Dashboard</p>
+                    </a>
+                  </li>
+                  <li class="nav-item active  ">
+                        <a class="nav-link" href="javascript:void(0)">
+                          <i class="material-icons">dashboard</i>
+                          <p>Dashboard</p>
+                        </a>
+                      </li>
+                      <li class="nav-item active  ">
+                            <a class="nav-link" href="javascript:void(0)">
+                              <i class="material-icons">dashboard</i>
+                              <p>Dashboard</p>
+                            </a>
+                          </li>
           <!-- your sidebar here -->
         </ul>
       </div>
@@ -69,40 +93,7 @@
         </div>
       </nav>
       <!-- End Navbar -->
-      <div class="content">
-        <div class="container-fluid">
-          <!-- your content here -->
-          <div class="row">
-  <div class="col-md-6 col-sm-6">
-      <div class="card card-stats">
-          <div class="card-header card-header-success card-header-icon">
-            <div class="card-icon">
-              <img class="img-excel" src="img/excel.png" alt="">
-            </div>
-           
-            <p class="card-category"> Arraste o arquivo .xlsx aqui <br>ou </p>
-            <p class="card-title">Selecione o arquivo no seu computador</p>
-          </div>
-          <div class="card-footer">
-              <div class="stats">
-                  <input class="btn btn-success" type="file" id="my-file" name="files[]" accept=".xlsx" >
-        
-                <label for="my-file" class="input-file-click"></label>		
-              </div>
-          </div>
-      </div>
-  </div>
-  <div class="card card-nav-tabs">
-    <div class="card-header card-header-success">
-      Quote
-    </div>
-    <div class="card-body">
-      <blockquote class="blockquote mb-0">
-        <p> <button type="button" class="btn btn-success" id="btn-enviar">PROCESSAR</button>	</p>
-        <footer class="blockquote-footer" id="test" >Someone famous in <cite title="Source Title">Source Title</cite></footer>
-      </blockquote>
-    </div>
-  </div>
+ 
       <footer class="footer">
         <div class="container-fluid">
           <nav class="float-left">
@@ -310,6 +301,11 @@
   	<script src="js/jszip.js"></script>
     <script src="js/xlsx.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/main.js"></script>
+	<script>
+			var teste = sessionStorage.getItem('array-finalzao')
+            console.log(JSON.parse(teste));
+	</script>
 </body>
 
 </html>

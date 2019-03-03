@@ -11,18 +11,18 @@ $('#my-file').on("change", function(){
 
 
 
-// $('#btn-enviar').on("click", function ajax() {
-// 	$.ajax({
-// 		url:"index.html",
-// 		success:function(dados){
-// 			$(".tela-inteira").css('display', 'block');
-// 			setTimeout(function(){
-// 				window.location = "processado.html";
-// 			}, 8000);
-// 		}
-// 	})
+$('#btn-enviar').on("click", function ajax() {
+	$.ajax({
+		url:"index.html",
+		success:function(dados){
+			$(".tela-inteira").css('display', 'block');
+			setTimeout(function(){
+				window.location = "tabelas.html";
+			}, 8000);
+		}
+	})
 	
-// });
+});
 
 
 
@@ -39,7 +39,7 @@ var ExcelToJSON = function() {
             var XL_row_object = XLSX.utils.sheet_to_row_object_array(workbook.Sheets[sheetName]);
             var json_object = JSON.stringify(XL_row_object);
 			console.log(JSON.parse(json_object));
-			$("#test").text(json_object)
+			
            
             sessionStorage.setItem('array-finalzao', json_object);
             var teste = sessionStorage.getItem('array-finalzao')
@@ -60,9 +60,7 @@ function handleFileSelect(evt) {
     var xl2json = new ExcelToJSON();
     xl2json.parseExcel(files[0]);
 }
-function testjson (){
-	$("#test").text(json_object)
-}
+
 
 $(function(){
     var operacao = "A"; //"A"=Adição; "E"=Edição
