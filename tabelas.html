@@ -139,7 +139,7 @@
             <table id="table" class="table">
               <thead id="theadestado" class=" text-primary">
                 <th>
-                  ID
+                  RA
                 </th>
                 <th>
                   ESTADO
@@ -418,7 +418,7 @@
           body +=
             "<tr>" +
                 "<td>"+
-                    i +
+                    JSON.parse(teste)[i].RA +
                   "</td>"+
                   "<td>"+
                       JSON.parse(teste)[i].ESTADO +
