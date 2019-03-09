@@ -10,7 +10,7 @@ for (var i = 0; i < ultimo; i++) {
     if (i == 0) {
         body +=
             "<th>" +
-            "Id" +
+            "RA" +
             "</th>" +
             "<th>" +
             "ESTADO" +
@@ -107,25 +107,25 @@ document.getElementById("theadestado").innerHTML = body;
 
 var data = [
     {
-        value: 30,
+        value: 25,
         color: "#F7464A",
         highlight: "#FF5A5E",
         label: "Red"
     },
     {
-        value: 50,
+        value: 25,
         color: "#46BFBD",
         highlight: "#5AD3D1",
         label: "Green"
     },
     {
-        value: 100,
+        value: 25,
         color: "#FDB45C",
         highlight: "#FFC870",
         label: "Yellow"
     },
     {
-        value: 100,
+        value: 25,
         color: "#0cc042",
         highlight: "#FFC870",
         label: "roxo"
