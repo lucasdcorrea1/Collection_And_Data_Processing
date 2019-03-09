@@ -123,10 +123,10 @@
             <div class="card-header card-header-success">
               <ul class="nav nav-tabs">
                 <li class="nav-item">
-                  <a class="nav-link active" href="#">Active</a>
+                  <a class="nav-link active" onclick="noneEstado()">tb 1 blok </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
+                  <a class="nav-link" onclick="nonetb2()">tb 2 none</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link disabled" href="#">Disabled</a>
@@ -135,66 +135,11 @@
             </div>
             <table id="table" class="table">
               <thead id="theadestado" class=" text-primary">
-                <th>
-                  RA
-                </th>
-                <th>
-                  ESTADO
-                </th>
-                <th>
-                  CIDADE
-                </th>
-                <th>
-                    COM QUEM MORA
-                </th>
-                <th>
-                    DISTÂNCIA
-                </th>
               </thead>
               <tbody id="tbodyestado">
               </tbody>
             </table>
           </div>
-          
-          <div id="cardtest" class="card text-center">
-            <div class="card-header card-header-success">
-              <ul class="nav nav-tabs">
-                <li class="nav-item">
-                  <a class="nav-link active" href="#">Active</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled" href="#">Disabled</a>
-                </li>
-              </ul>
-            </div>
-            <table class="table">
-              <thead id="theadtest" class=" text-primary">
-                <th>
-                  ID
-                </th>
-                <th>
-                  Name
-                </th>
-                <th>
-                  Country
-                </th>
-                <th>
-                  City
-                </th>
-                <th>
-                  Salary
-                </th>
-              </thead>
-              <tbody id="tbodytest">
-               
-              </tbody>
-            </table>
-          </div>
-
-
 
           <footer class="footer">
             <div class="container-fluid">
@@ -241,6 +186,7 @@
       <script src="./assets/demo/demo.js"></script>
       <script>
         $(document).ready(function () {
+        
           $().ready(function () {
             $sidebar = $('.sidebar');
 
