@@ -8,7 +8,7 @@ var teste = sessionStorage.getItem('array-finalzao')
 
           body +=
             "<tr>" +
-                "<td>"+
+                "<td  class='text-susses'>"+
                     JSON.parse(teste)[i].RA +
                   "</td>"+
                   "<td>"+
