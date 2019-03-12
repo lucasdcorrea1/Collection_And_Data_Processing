@@ -5,7 +5,18 @@ var jsonReceived_OriginaL = jsonReceived;//SEM CONVERSÃO
 
 
 var data_array = jsonReceived_OriginaL.split(',');//QUEBRA TODO ARRAY;
+
 var data_array_aux = data_array[1];
+var data_array_inicial = data_array[0];
+
+var itensTabela_TOTAL = [];
+
+itensTabela_TOTAL[0] = data_array[1];
+
+for(var a = 0; a <= 10; a++){
+
+}
+
 var data_array_teste = data_array_aux.split(':');
 
 //ARRAYS
@@ -13,7 +24,7 @@ var itensTabela_CIDADES = [];
 var itensTabela_count_CIDADES = [];
 var itensTabela_TOTAL = [];
 
-console.log(data_array_teste[1]);
+console.log(itensTabela_TOTAL);
 
 
 
