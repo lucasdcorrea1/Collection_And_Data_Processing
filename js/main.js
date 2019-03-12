@@ -2,7 +2,7 @@ document.getElementById('my-file').addEventListener('change', handleFileSelect, 
 
 $('#my-file').on("change", function(){ 
 	var nome_arquivo = $('#my-file')[0].files[0];
-	$('.h3-arraste').html(nome_arquivo.name);
+	
 	$('.h3-arraste').css('margin-top', '10px');
 	$('.img-excel').css('opacity', '1');
 	$('.img-excel').css('display', 'inline-block');
@@ -11,7 +11,7 @@ $('#my-file').on("change", function(){
 
 
 
-$('#btn-enviar').on("click", function ajax() {
+function ajax() {
 	$.ajax({
 		url:"index.html",
 		success:function(dados){
@@ -21,7 +21,7 @@ $('#btn-enviar').on("click", function ajax() {
 			}, 3000);
 		}
 	})
-});
+};
 
 
 
@@ -42,7 +42,7 @@ var ExcelToJSON = function() {
            
             sessionStorage.setItem('array-finalzao', json_object);
             var teste = sessionStorage.getItem('array-finalzao')
-
+            ajax();
            	 
             // jQuery( '.output-json' ).val( json_object );
         })

@@ -10,7 +10,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <!--     Fonts and icons     -->
   <link rel="stylesheet" type="text/css"
-    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
   <link rel="stylesheet" href="test.css">
   <!-- Material Kit CSS -->
@@ -18,187 +18,207 @@
 </head>
 
 <body class="dark-edition">
+
   <div class="wrapper ">
-    <div class="sidebar" data-color="green" data-background-color="black" data-image="./assets/img/sidebar-11.jpg">
+    <div class="sidebar" data-color="green" data-background-color="black" data-image="./assets/img/sidebar-9.jpg">
       <!--
       Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
 
       Tip 2: you can also add an image using data-image tag
-  -->
-      <div class="logo">
-        <a class="simple-text logo-normal">
-          Processamento
-        </a>
-      </div>
-      <div class="sidebar-wrapper">
-        <ul class="nav">
-          <li class="nav-item active  ">
-            <a class="nav-link" href="index.html">
-              <i class="material-icons">dashboard</i>
-              <p>Processamento</p>
+    -->
+    <div class="logo">
+      <a class="simple-text logo-normal">
+        Processamento
+      </a>
+    </div>
+    <div class="sidebar-wrapper">
+      <ul class="nav">
+        <li class="nav-item active  ">
+          <a class="nav-link" href="index.html">
+            <i class="material-icons">dashboard</i>
+            <p>Processamento</p>
+          </a>
+        </li>
+        <li class="nav-item active  ">
+          <a class="nav-link" href="#cardestado">
+            <img class="icon-nav" src="img/table-grid.png" alt="">
+            <p>Tabela Estado</p>
+          </a>
+        </li>
+        <li class="nav-item active  ">
+          <a class="nav-link" href="#cardtest">
+            <img class="icon-nav" src="img/table-grid.png" alt="">
+            <p>Tabela de tese</p>
+          </a>
+        </li>
+        <!-- your sidebar here -->
+      </ul>
+    </div>
+  </div>
+  <div class="main-panel">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
+      <div class="container-fluid">
+        <div class="navbar-wrapper">
+         
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="navbar-toggler-icon icon-bar"></span>
+        <span class="navbar-toggler-icon icon-bar"></span>
+        <span class="navbar-toggler-icon icon-bar"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:void(0)">
+              <i class="material-icons">notifications</i>
+              <p class="d-lg-none d-md-block">
+                Notifications
+              </p>
             </a>
           </li>
-          <li class="nav-item active  ">
-              <a class="nav-link" href="#cardestado">
-                  <img class="icon-nav" src="img/table-grid.png" alt="">
-                <p>Tabela Estado</p>
-              </a>
-            </li>
-          <li class="nav-item active  ">
-              <a class="nav-link" href="#cardtest">
-                  <img class="icon-nav" src="img/table-grid.png" alt="">
-                <p>Tabela de tese</p>
-              </a>
-            </li>
-          <!-- your sidebar here -->
+          <!-- your navbar here -->
         </ul>
       </div>
     </div>
-    <div class="main-panel">
-      <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
-        <div class="container-fluid">
-          <div class="navbar-wrapper">
-            <a class="navbar-brand" href="javascript:void(0)">Dashboard</a>
+  </nav>
+  <!-- End Navbar -->
+
+  <div class="content">
+    <div class="dropdown show">
+      <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Dropdown link
+      </a>
+
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+
+
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card card-chart">
+            <canvas id="myChart" class="pizza"></canvas>
+            <div class="card-body">
+              <h4 class="card-title">Daily Sales</h4>
+              <p class="card-category"><span class="text-success"><i class="fa fa-long-arrow-up"></i> 55% </span>
+              increase in today sales.</p>
+            </div>
+            <div class="card-footer">
+              <div class="stats">
+                <i class="material-icons">access_time</i> updated 4 minutes ago
+              </div>
+            </div>
           </div>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="navbar-toggler-icon icon-bar"></span>
-            <span class="navbar-toggler-icon icon-bar"></span>
-            <span class="navbar-toggler-icon icon-bar"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="javascript:void(0)">
-                  <i class="material-icons">notifications</i>
-                  <p class="d-lg-none d-md-block">
-                    Notifications
-                  </p>
+        </div>
+
+      </div>
+
+      <!-- your content here -->
+      <div id="cardestado" class="card text-center">
+        <div class="card-header card-header-success">
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Active</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+        </div>
+        <table id="table" class="table">
+          <thead id="theadestado" class=" text-primary">
+            <th>
+              RA
+            </th>
+            <th>
+              ESTADO
+            </th>
+            <th>
+              CIDADE
+            </th>
+            <th>
+              COM QUEM MORA
+            </th>
+            <th>
+              DISTÂNCIA
+            </th>
+          </thead>
+          <tbody id="tbodyestado">
+          </tbody>
+        </table>
+      </div>
+
+      
+          </tbody>
+        </table>
+      </div>
+
+
+
+      <footer class="footer">
+        <div class="container-fluid">
+          <nav class="float-left">
+            <ul>
+              <li>
+                <a href="https://github.com/lucasdcorrea1/Collection_And_Data_Processing">
+
                 </a>
               </li>
-              <!-- your navbar here -->
             </ul>
+          </nav>
+          <div class="copyright float-right">
+            &copy;
+            <script>
+              document.write(new Date().getFullYear())
+            </script>, Processamento de dados -
+            <a href="https://github.com/lucasdcorrea1/Collection_And_Data_Processing" target="_blank">repositório
+            Github</a>
           </div>
+          <!-- your footer here -->
         </div>
-      </nav>
-      <!-- End Navbar -->
-      
-      <div class="content">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="card card-chart">
-                <canvas id="myChart" class="pizza"></canvas>
-                <div class="card-body">
-                  <h4 class="card-title">Daily Sales</h4>
-                  <p class="card-category"><span class="text-success"><i class="fa fa-long-arrow-up"></i> 55% </span>
-                    increase in today sales.</p>
-                </div>
-                <div class="card-footer">
-                  <div class="stats">
-                    <i class="material-icons">access_time</i> updated 4 minutes ago
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="card card-chart">
-                <canvas id="myChart2" class="pizza"></canvas>
-                <div class="card-body">
-                  <h4 class="card-title">Completed Tasks</h4>
-                  <p class="card-category">Last Campaign Performance</p>
-                </div>
-                <div class="card-footer">
-                  <div class="stats">
-                    <i class="material-icons">access_time</i> updated 2 minutes ago
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- your content here -->
-          <div id="cardestado" class="card text-center">
-            <div class="card-header card-header-success">
-              <ul class="nav nav-tabs">
-                <li class="nav-item">
-                  <a class="nav-link active" onclick="noneEstado()">tb 1 blok </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" onclick="nonetb2()">tb 2 none</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled" href="#">Disabled</a>
-                </li>
-              </ul>
-            </div>
-            <table id="table" class="table">
-              <thead id="theadestado" class=" text-primary">
-              </thead>
-              <tbody id="tbodyestado">
-              </tbody>
-            </table>
-          </div>
+      </footer>
+    </div>
+  </div>
+  <!--   Core JS Files   -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js'></script>
+  <script src="./assets/js/core/jquery.min.js"></script>
+  <script src="./assets/js/core/popper.min.js"></script>
+  <script src="./assets/js/core/bootstrap-material-design.min.js"></script>
+  <script src="https://unpkg.com/default-passive-events"></script>
+  <script src="./assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+  <!-- Place this tag in your head or just before your close body tag. -->
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <!--  Google Maps Plugin    -->
+  <!--  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script> -->
+  <!-- Chartist JS -->
+  <script src="./assets/js/plugins/chartist.min.js"></script>
+  <!--  Notifications Plugin    -->
+  <script src="./assets/js/plugins/bootstrap-notify.js"></script>
+  <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
+  <script src="./assets/js/material-dashboard.js?v=2.1.0"></script>
+  <!-- Material Dashboard DEMO methods, don't include it in your project! -->
+  <script src="./assets/demo/demo.js"></script>
+  <script>
+    $(document).ready(function () {
+      $().ready(function () {
+        $sidebar = $('.sidebar');
 
-          <footer class="footer">
-            <div class="container-fluid">
-              <nav class="float-left">
-                <ul>
-                  <li>
-                    <a href="https://github.com/lucasdcorrea1/Collection_And_Data_Processing">
+        $sidebar_img_container = $sidebar.find('.sidebar-background');
 
-                    </a>
-                  </li>
-                </ul>
-              </nav>
-              <div class="copyright float-right">
-                &copy;
-                <script>
-                  document.write(new Date().getFullYear())
-                </script>, Processamento de dados -
-                <a href="https://github.com/lucasdcorrea1/Collection_And_Data_Processing" target="_blank">repositório
-                  Github</a>
-              </div>
-              <!-- your footer here -->
-            </div>
-          </footer>
-        </div>
-      </div>
-      <!--   Core JS Files   -->
-      <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js'></script>
-      <script src="./assets/js/core/jquery.min.js"></script>
-      <script src="./assets/js/core/popper.min.js"></script>
-      <script src="./assets/js/core/bootstrap-material-design.min.js"></script>
-      <script src="https://unpkg.com/default-passive-events"></script>
-      <script src="./assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
-      <!-- Place this tag in your head or just before your close body tag. -->
-      <script async defer src="https://buttons.github.io/buttons.js"></script>
-      <!--  Google Maps Plugin    -->
-      <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
-      <!-- Chartist JS -->
-      <script src="./assets/js/plugins/chartist.min.js"></script>
-      <!--  Notifications Plugin    -->
-      <script src="./assets/js/plugins/bootstrap-notify.js"></script>
-      <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
-      <script src="./assets/js/material-dashboard.js?v=2.1.0"></script>
-      <!-- Material Dashboard DEMO methods, don't include it in your project! -->
-      <script src="./assets/demo/demo.js"></script>
-      <script>
-        $(document).ready(function () {
-        
-          $().ready(function () {
-            $sidebar = $('.sidebar');
+        $full_page = $('.full-page');
 
-            $sidebar_img_container = $sidebar.find('.sidebar-background');
+        $sidebar_responsive = $('body > .navbar-collapse');
 
-            $full_page = $('.full-page');
+        window_width = $(window).width();
 
-            $sidebar_responsive = $('body > .navbar-collapse');
-
-            window_width = $(window).width();
-
-            $('.fixed-plugin a').click(function (event) {
+        $('.fixed-plugin a').click(function (event) {
               // Alex if we click on switch, stop propagation of the event, so the dropdown will not be hide, otherwise we set the  section active
               if ($(this).hasClass('switch-trigger')) {
                 if (event.stopPropagation) {
@@ -209,129 +229,129 @@
               }
             });
 
-            $('.fixed-plugin .active-color span').click(function () {
-              $full_page_background = $('.full-page-background');
+        $('.fixed-plugin .active-color span').click(function () {
+          $full_page_background = $('.full-page-background');
 
-              $(this).siblings().removeClass('active');
-              $(this).addClass('active');
+          $(this).siblings().removeClass('active');
+          $(this).addClass('active');
 
-              var new_color = $(this).data('color');
+          var new_color = $(this).data('color');
 
-              if ($sidebar.length != 0) {
-                $sidebar.attr('data-color', new_color);
-              }
+          if ($sidebar.length != 0) {
+            $sidebar.attr('data-color', new_color);
+          }
 
-              if ($full_page.length != 0) {
-                $full_page.attr('filter-color', new_color);
-              }
+          if ($full_page.length != 0) {
+            $full_page.attr('filter-color', new_color);
+          }
 
-              if ($sidebar_responsive.length != 0) {
-                $sidebar_responsive.attr('data-color', new_color);
-              }
+          if ($sidebar_responsive.length != 0) {
+            $sidebar_responsive.attr('data-color', new_color);
+          }
+        });
+
+        $('.fixed-plugin .background-color .badge').click(function () {
+          $(this).siblings().removeClass('active');
+          $(this).addClass('active');
+
+          var new_color = $(this).data('background-color');
+
+          if ($sidebar.length != 0) {
+            $sidebar.attr('data-background-color', new_color);
+          }
+        });
+
+        $('.fixed-plugin .img-holder').click(function () {
+          $full_page_background = $('.full-page-background');
+
+          $(this).parent('li').siblings().removeClass('active');
+          $(this).parent('li').addClass('active');
+
+
+          var new_image = $(this).find("img").attr('src');
+
+          if ($sidebar_img_container.length != 0 && $('.switch-sidebar-image input:checked').length != 0) {
+            $sidebar_img_container.fadeOut('fast', function () {
+              $sidebar_img_container.css('background-image', 'url("' + new_image + '")');
+              $sidebar_img_container.fadeIn('fast');
             });
+          }
 
-            $('.fixed-plugin .background-color .badge').click(function () {
-              $(this).siblings().removeClass('active');
-              $(this).addClass('active');
+          if ($full_page_background.length != 0 && $('.switch-sidebar-image input:checked').length != 0) {
+            var new_image_full_page = $('.fixed-plugin li.active .img-holder').find('img').data('src');
 
-              var new_color = $(this).data('background-color');
-
-              if ($sidebar.length != 0) {
-                $sidebar.attr('data-background-color', new_color);
-              }
+            $full_page_background.fadeOut('fast', function () {
+              $full_page_background.css('background-image', 'url("' + new_image_full_page + '")');
+              $full_page_background.fadeIn('fast');
             });
+          }
 
-            $('.fixed-plugin .img-holder').click(function () {
-              $full_page_background = $('.full-page-background');
+          if ($('.switch-sidebar-image input:checked').length == 0) {
+            var new_image = $('.fixed-plugin li.active .img-holder').find("img").attr('src');
+            var new_image_full_page = $('.fixed-plugin li.active .img-holder').find('img').data('src');
 
-              $(this).parent('li').siblings().removeClass('active');
-              $(this).parent('li').addClass('active');
+            $sidebar_img_container.css('background-image', 'url("' + new_image + '")');
+            $full_page_background.css('background-image', 'url("' + new_image_full_page + '")');
+          }
 
+          if ($sidebar_responsive.length != 0) {
+            $sidebar_responsive.css('background-image', 'url("' + new_image + '")');
+          }
+        });
 
-              var new_image = $(this).find("img").attr('src');
+        $('.switch-sidebar-image input').change(function () {
+          $full_page_background = $('.full-page-background');
 
-              if ($sidebar_img_container.length != 0 && $('.switch-sidebar-image input:checked').length != 0) {
-                $sidebar_img_container.fadeOut('fast', function () {
-                  $sidebar_img_container.css('background-image', 'url("' + new_image + '")');
-                  $sidebar_img_container.fadeIn('fast');
-                });
-              }
+          $input = $(this);
 
-              if ($full_page_background.length != 0 && $('.switch-sidebar-image input:checked').length != 0) {
-                var new_image_full_page = $('.fixed-plugin li.active .img-holder').find('img').data('src');
+          if ($input.is(':checked')) {
+            if ($sidebar_img_container.length != 0) {
+              $sidebar_img_container.fadeIn('fast');
+              $sidebar.attr('data-image', '#');
+            }
 
-                $full_page_background.fadeOut('fast', function () {
-                  $full_page_background.css('background-image', 'url("' + new_image_full_page + '")');
-                  $full_page_background.fadeIn('fast');
-                });
-              }
+            if ($full_page_background.length != 0) {
+              $full_page_background.fadeIn('fast');
+              $full_page.attr('data-image', '#');
+            }
 
-              if ($('.switch-sidebar-image input:checked').length == 0) {
-                var new_image = $('.fixed-plugin li.active .img-holder').find("img").attr('src');
-                var new_image_full_page = $('.fixed-plugin li.active .img-holder').find('img').data('src');
+            background_image = true;
+          } else {
+            if ($sidebar_img_container.length != 0) {
+              $sidebar.removeAttr('data-image');
+              $sidebar_img_container.fadeOut('fast');
+            }
 
-                $sidebar_img_container.css('background-image', 'url("' + new_image + '")');
-                $full_page_background.css('background-image', 'url("' + new_image_full_page + '")');
-              }
+            if ($full_page_background.length != 0) {
+              $full_page.removeAttr('data-image', '#');
+              $full_page_background.fadeOut('fast');
+            }
 
-              if ($sidebar_responsive.length != 0) {
-                $sidebar_responsive.css('background-image', 'url("' + new_image + '")');
-              }
-            });
+            background_image = false;
+          }
+        });
 
-            $('.switch-sidebar-image input').change(function () {
-              $full_page_background = $('.full-page-background');
+        $('.switch-sidebar-mini input').change(function () {
+          $body = $('body');
 
-              $input = $(this);
+          $input = $(this);
 
-              if ($input.is(':checked')) {
-                if ($sidebar_img_container.length != 0) {
-                  $sidebar_img_container.fadeIn('fast');
-                  $sidebar.attr('data-image', '#');
-                }
+          if (md.misc.sidebar_mini_active == true) {
+            $('body').removeClass('sidebar-mini');
+            md.misc.sidebar_mini_active = false;
 
-                if ($full_page_background.length != 0) {
-                  $full_page_background.fadeIn('fast');
-                  $full_page.attr('data-image', '#');
-                }
+            $('.sidebar .sidebar-wrapper, .main-panel').perfectScrollbar();
 
-                background_image = true;
-              } else {
-                if ($sidebar_img_container.length != 0) {
-                  $sidebar.removeAttr('data-image');
-                  $sidebar_img_container.fadeOut('fast');
-                }
+          } else {
 
-                if ($full_page_background.length != 0) {
-                  $full_page.removeAttr('data-image', '#');
-                  $full_page_background.fadeOut('fast');
-                }
+            $('.sidebar .sidebar-wrapper, .main-panel').perfectScrollbar('destroy');
 
-                background_image = false;
-              }
-            });
+            setTimeout(function () {
+              $('body').addClass('sidebar-mini');
 
-            $('.switch-sidebar-mini input').change(function () {
-              $body = $('body');
-
-              $input = $(this);
-
-              if (md.misc.sidebar_mini_active == true) {
-                $('body').removeClass('sidebar-mini');
-                md.misc.sidebar_mini_active = false;
-
-                $('.sidebar .sidebar-wrapper, .main-panel').perfectScrollbar();
-
-              } else {
-
-                $('.sidebar .sidebar-wrapper, .main-panel').perfectScrollbar('destroy');
-
-                setTimeout(function () {
-                  $('body').addClass('sidebar-mini');
-
-                  md.misc.sidebar_mini_active = true;
-                }, 300);
-              }
+              md.misc.sidebar_mini_active = true;
+            }, 300);
+          }
 
               // we simulate the window Resize so the charts will get updated in realtime.
               var simulateWindowResize = setInterval(function () {
@@ -344,13 +364,13 @@
               }, 1000);
 
             });
-          });
-        });
-      </script>
-      <script src="js/jszip.js"></script>
-      <script src="js/xlsx.js"></script>
-      <script src="js/main.js"></script>
-      <script  src="js/maintable.js"></script>
+      });
+});
+</script>
+<script src="js/jszip.js"></script>
+<script src="js/xlsx.js"></script>
+<script src="js/main.js"></script>
+<script  src="js/maintable.js"></script>
 
 </body>
 
