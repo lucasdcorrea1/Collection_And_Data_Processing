@@ -1,0 +1,43 @@
+.img--back{  
+  display:block;
+  position:relative;
+  margin: 2.5vw;
+  width:15vw;
+  height: 15vw;
+  float:left;
+  border-radius:100%;
+  cursor:pointer;
+  box-shadow: 0px 0px 15px rgba(black,0.8) inset, 0px 0px 1px rgba(white,.3);
+  //overriding the image default size
+  background-size: auto 150% !important;
+  
+  transition: all 180ms ease-out;
+  
+  &:hover{
+    transform : scale(1.1);
+    background-size: auto 100% !important;
+    box-shadow: 0px 0px 25px rgba(black,0.9) inset, 0px 0px 1px rgba(white,.5);
+    transition: all 180ms ease-in;
+  }
+  
+  &.portrait{
+     background-size: auto 200% !important;
+    &:hover{
+      background-size: auto 150% !important;
+    }
+  }
+  
+  // in case js didnt work
+  > img{
+    display:block;
+    position:relative;
+    z-index:1;
+		width:100%;
+	}
+  
+}
+
+
+p{
+  
+}

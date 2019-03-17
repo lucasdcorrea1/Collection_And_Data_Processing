@@ -22,6 +22,9 @@
 #process{
 	display: none;
 }
+#graphic{
+	display:none;
+}
 .img-excel{
 	width: 40px;
 	height: 40px;
@@ -42,7 +45,6 @@
 	margin-top: 5%;
     width: 400px;
     height: 300px;
-    visibility: 
 }
 
 
@@ -114,4 +116,17 @@
 	color: #fff;
 	font-family: PublicaSans_Black;
 	margin-top: 300px;
+}
+
+.h3-modificacoes{
+	font-size: 13px;
+	margin-left: 16px;
+	margin-top: -10px;
+	padding: 0;
+	
+}
+.graficos{
+	
+	padding: 5px;
+	margin-top: 20px;
 }
