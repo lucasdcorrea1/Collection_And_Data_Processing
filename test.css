@@ -18,12 +18,85 @@
 	src: url(font/PublicaSans-Light.otf);
 }
 
-
+html {
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+  }
+  /*
+  *  STYLE 7
+  */
+  
+  #exampleModalLong::-webkit-scrollbar-track
+  {
+	 -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	 background-color: #030305;
+	 border-radius: 10px;
+  }
+  
+  #exampleModalLong::-webkit-scrollbar
+  {
+	 width: 10px;
+	 background-color: #030305;
+  }
+  
+  #exampleModalLong::-webkit-scrollbar-thumb
+  {
+	 border-radius: 10px;
+	 background-image: -webkit-gradient(linear,
+										left bottom,
+										left top,
+										color-stop(0.44, rgb(2, 166, 118)),
+										color-stop(0.72, rgb(0, 115, 105)),
+										color-stop(0.86, rgb(0, 56, 64)));
+	}
+	#exampleModalLong {
+		scroll-behavior: smooth;
+		overflow-x: hidden;
+		}
+		/*
+		*  STYLE 7
+		*/
+		
+		html::-webkit-scrollbar-track
+		{
+		 -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+		 background-color: #1a2035;
+		 border-radius: 10px;
+		}
+		
+		html::-webkit-scrollbar
+		{
+		 width: 10px;
+		 background-color: #1a2035;
+		}
+		
+		html::-webkit-scrollbar-thumb
+		{
+		 border-radius: 10px;
+		 background-image: -webkit-gradient(linear,
+											left bottom,
+											left top,
+											color-stop(0.44, rgb(2, 166, 118)),
+											color-stop(0.72, rgb(0, 115, 105)),
+											color-stop(0.86, rgb(0, 56, 64)));
+		}
+  
 #process{
 	display: none;
 }
 #graphic{
 	display:none;
+}
+.img-dev{
+	width: 70px;
+	height: 70px;
+	/* margin-top: 30px; */
+	/* display: none;
+	opacity: 0; */
+	transition: all 0.4s;
+}
+.img-volt{
+	max-width: 65%;
 }
 .img-excel{
 	width: 40px;
@@ -129,4 +202,53 @@
 	
 	padding: 5px;
 	margin-top: 20px;
+}
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  /* font-size: 36px; */
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  /* font-size: 60px; */
+}
+
+@media screen and (max-height: 450px) {
+  /* .overlay a {font-size: 20px} */
+  .overlay .closebtn {
+  /* font-size: 40px; */
+  top: 15px;
+  right: 35px;
+  }
 }

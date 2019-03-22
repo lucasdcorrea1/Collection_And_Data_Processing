@@ -23,6 +23,8 @@ for (var i = 0; i <= keys.length; i++) {
 }
 
 $( ".dropdown-item" ).click(function() {
+  closeNav()
+  $('#tudotest').css('display', 'block');
   var id = $(this).attr('id');
   functionSystemReload(keys[id]);
   $(".card-title").text("TABELA: "+keys[id]);
@@ -31,7 +33,7 @@ $( ".dropdown-item" ).click(function() {
   $("#title_graph").text(keys[id]);
   $("#title_teble").text(keys[id]);
   $('#exampleModalLong').modal('hide')
-  $('.page-graph').css('display', 'block');
+
 });
 
 
@@ -99,4 +101,11 @@ function callFuncionTable(finalValue){
   $(".graficos").append("<h3 class='h3-modificacoes' style='color: rgba("+arrayColor_R[l]+","+arrayColor_G[l]+","+arrayColor_B[l]+",1)!important'>"+ valorTemporario_2 + "( "+porcentagem+"% ) <small class='text-muted'>"+ nomeTemporario_2 +"</small></h3>"); 
 
 }
+}
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
 }

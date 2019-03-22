@@ -1,0 +1,41 @@
+.img--back {
+  display: block;
+  position: relative;
+  margin: 2.5vw;
+  width: 15vw;
+  height: 15vw;
+  float: left;
+  border-radius: 100%;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8) inset, 0px 0px 1px rgba(255, 255, 255, 0.3);
+          box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8) inset, 0px 0px 1px rgba(255, 255, 255, 0.3);
+  background-size: auto 150% !important;
+  -webkit-transition: all 180ms ease-out;
+  transition: all 180ms ease-out;
+}
+
+.img--back:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  background-size: auto 100% !important;
+  -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.9) inset, 0px 0px 1px rgba(255, 255, 255, 0.5);
+          box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.9) inset, 0px 0px 1px rgba(255, 255, 255, 0.5);
+  -webkit-transition: all 180ms ease-in;
+  transition: all 180ms ease-in;
+}
+
+.img--back.portrait {
+  background-size: auto 200% !important;
+}
+
+.img--back.portrait:hover {
+  background-size: auto 150% !important;
+}
+
+.img--back > img {
+  display: block;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+/*# sourceMappingURL=style.css.map */
