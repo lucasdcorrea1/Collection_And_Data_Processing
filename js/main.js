@@ -15,7 +15,11 @@ function ajax() {
 	$.ajax({
 		url:"index.html",
 		success:function(dados){
-			$(".tela-inteira").css('display', 'block');
+			$("body").show().html("<div class='loader'>"+
+			"<div class='inner one'></div>"+
+			"<div class='inner two'></div>"+
+			"<div class='inner three'></div>"+
+		  "</div>");
 			setTimeout(function(){
 				window.location = "tabelas.html";
 			}, 3000);

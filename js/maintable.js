@@ -23,7 +23,7 @@ for (var i = 0; i <= keys.length; i++) {
 }
 
 $( ".dropdown-item" ).click(function() {
-  closeNav()
+  $('#dropdown1').css('display', 'none');
   $('#tudotest').css('display', 'block');
   var id = $(this).attr('id');
   functionSystemReload(keys[id]);
@@ -102,10 +102,4 @@ function callFuncionTable(finalValue){
 
 }
 }
-function openNav() {
-  document.getElementById("myNav").style.width = "100%";
-}
 
-function closeNav() {
-  document.getElementById("myNav").style.width = "0%";
-}
