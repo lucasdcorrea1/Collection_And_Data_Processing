@@ -115,7 +115,9 @@ html {
     text-align: center;
 }
 .pizza{
-	margin-top: 5%;
+    position: relative;
+    right: 10%;
+    margin-top: 5%;
     width: 400px;
     height: 300px;
 }
