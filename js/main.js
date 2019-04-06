@@ -47,12 +47,8 @@ var ExcelToJSON = function() {
 			console.log(JSON.parse(json_object));
 			document.getElementById("excel").style = "display: none;";
 			document.getElementById("process").style = "display: block;";
-			
-           
             sessionStorage.setItem('array-finalzao', json_object);
-            var teste = sessionStorage.getItem('array-finalzao')
-            
-            // jQuery( '.output-json' ).val( json_object );
+            var teste = sessionStorage.getItem('array-finalzao');
         })
 		};
 		reader.onerror = function(ex) {
